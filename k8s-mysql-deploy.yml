@@ -27,13 +27,6 @@ spec:
                 secretKeyRef:
                   name: mysql-crud-secret
                   key: MYSQL_PASSWORD
-          resources:
-            requests:
-              memory: "128Mi"
-              cpu: "250m"
-            limits:
-              memory: "130Mi"
-              cpu: "252m"          
           volumeMounts:
             - name: crud-vol
               mountPath: /data
